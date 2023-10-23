@@ -1,0 +1,56 @@
+<ion-content>
+<div class="login-section ion-padding">
+  <div class="heading ion-padding">
+    <h1>Welcome penesito</h1>
+    <p>Sign in to continue</p>
+  </div>
+  <div class="login-form ion-padding">
+    <div class="form-input">
+      <ion-icon name="email-outline"></ion-icon>
+      <ion-item> 
+        <ion-label position="floating">Emal</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+    </div>
+    <div class="form-input">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-item> 
+        <ion-label position="floating">password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </div>
+  </div>
+  <div class="action-button ion-padding">
+    <ion-button size="large" class="login-button">LOG IN</ion-button>
+    <p>forgot pass?</p>
+    <ion-button class="signup-button" size="large" fill="outline" routerLink="/signup">Sign ña</ion-button>
+  </div>
+</div>
+
+
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/foro']">
+      <ion-icon name="megaphone-outline"></ion-icon>
+      Foro
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/empresas']">
+      <ion-icon name="people-outline"></ion-icon>
+      Empresas
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/para-ti']">
+      <ion-icon name="search"></ion-icon>
+      Para ti
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/perfil']">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      Perfil
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/crear']">
+      <ion-icon name="construct-outline"></ion-icon>
+      Crear
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
